@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You — A Timeless Wish</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <audio id="bg-music" loop>
+        <source src="https://assets.mixkit.co/music/preview/mixkit-happy-birthday-to-you-443.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="container">
+        <!-- Intro Screen -->
+        <section id="intro" class="screen active">
+            <div class="heart-icon">💖</div>
+            <h1 class="title">A Wish Like No Other</h1>
+            <p class="subtitle">This was written for you, and only you, in all of time.</p>
+            <button id="enter-btn" class="btn-enter">
+                <i class="fas fa-gift"></i> Open Your Wish
+            </button>
+            <div class="hint">Click anywhere to sprinkle stardust</div>
+        </section>
+
+        <!-- Main Wish Screen -->
+        <section id="wish-screen" class="screen">
+            <div class="back-btn" id="back-btn">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+
+            <div class="header">
+                <div class="date-tag">Today & Forever</div>
+                <h1 class="name-title">For <span id="name">My Precious One</span></h1>
+            </div>
+
+            <div class="wish-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="floral-frame">🎀</div>
+                        <div class="main-wish">
+                            <p class="first-line">If birthdays are moments where time bends to celebrate a soul,</p>
+                            <p class="second-line">then today, the universe is bending for <em>you</em>.</p>
+                        </div>
+                        <div class="instruction">(Tap to unfold)</div>
+                    </div>
+                    <div class="card-back">
+                        <h2><i class="fas fa-star"></i> My Eternal Wish</h2>
+                        <div class="wish-text">
+                            <p>I wish you a kind of happiness that doesn’t need a reason — it simply <strong>exists</strong>, like sunlight.</p>
+                            <p>I wish you dreams that visit you in daylight and choose to stay, building a home in your reality.</p>
+                            <p>I wish you peace that feels like a gentle tide — always returning, always reminding you of your own depth.</p>
+                            <p>But more than anything, I wish you the quiet, unshakable knowing that <span class="highlight">you are loved</span> in a way that no one else has ever been loved before.</p>
+                            <p class="signature">— Made for you, with stardust & sincerity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="interactive-zone">
+                <h3><i class="fas fa-magic"></i> Create Your Blessing</h3>
+                <div class="blessing-box">
+                    <textarea id="blessing-input" placeholder="Write a blessing for your year ahead..."></textarea>
+                    <button id="release-btn"><i class="fas fa-dove"></i> Release into the Universe</button>
+                </div>
+                <div id="blessing-display"></div>
+            </div>
+
+            <div class="gallery">
+                <h3><i class="fas fa-images"></i> Memory Constellations</h3>
+                <div class="photos">
+                    <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1529255484355-cb73c33c04bb?ixlib=rb-4.0.3&auto=format&fit=crop&w-600&q=80');"></div>
+                    <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1530026405188-2d2d7b3e1c1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                </div>
+            </div>
+
+            <div class="footer-note">
+                <p>This webpage is a living wish — it was coded to bloom only once, for only one person in this lifetime: <strong>You</strong>.</p>
+                <p class="copyright">With endless warmth • © Timeless Moments</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Floating Elements -->
+    <div class="floating-hearts"></div>
+    <div class="floating-stars"></div>
+
+    <!-- Controls -->
+    <div class="controls">
+        <button id="music-toggle" class="control-btn">
+            <i class="fas fa-music"></i>
+        </button>
+        <button id="confetti-btn" class="control-btn">
+            <i class="fas fa-birthday-cake"></i>
+        </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+                      </html>
